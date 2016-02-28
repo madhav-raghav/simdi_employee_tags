@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+        <!--  HOD Tag  -->  
+        <record id="hod_tag" model="hr.employee.category">
+               <field name="name">HOD</field>
+        </record>
+        
+        <!--  HR Tag  -->
+        <record id="hr_tag" model="hr.employee.category">
+               <field name="name">HR</field>
+        </record>
+        
+        <!--  HR Assistant Tag  -->
+        <record id="hr_assistant_tag" model="hr.employee.category">
+               <field name="name">HR Assistant</field>
+               <field name="parent_id" ref="hr_tag"/>
+        </record>
+        
+        <!--  Employee Tag -->
+        <record id="employee_tag" model="hr.employee.category">
+               <field name="name">Employee</field>
+               <field name="parent_id" ref="hr_tag"/>
+        </record>
+        
+        <!--  Sales Person Tag  -->
+        <record id="sales_person_tag" model="hr.employee.category">
+               <field name="name">Sales Person</field>
+        </record>
+        
+        <!--  Credit Controller Tag  -->
+        <record id="credit_controller_tag" model="hr.employee.category">
+               <field name="name">Credit Controller</field>
+        </record>
+        
+        <!--  Divisional Accountant Tag  -->
+        <record id="divisional_accountant_tag" model="hr.employee.category">
+               <field name="name">Divisional Accountant</field>
+        </record>
+        
+        <!--  SC In-charge Tag  -->
+        <record id="sc_in_charge _tag" model="hr.employee.category">
+               <field name="name">SC In-charge</field>
+        </record>
+        
+        <!--  Comm Eligible-charge Tag  -->
+        <record id="comm_eligible_tag" model="hr.employee.category">
+               <field name="name">Comm Eligible</field>
+        </record>
+    </data>
+</openerp>
